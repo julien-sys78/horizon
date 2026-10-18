@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Horizon — Voir plus loin</title>
+  <meta name="description" content="Horizon — des paysages à couper le souffle, des sommets enneigés aux déserts infinis." />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION GLOBALE ============ -->
+  <header class="gnav">
+    <nav class="gnav__inner" aria-label="Navigation principale">
+      <a href="#" class="gnav__logo" aria-label="Horizon — accueil">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6" />
+          <path d="M5 14.5h14M7.5 17.5h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+          <path d="M8 12a4 4 0 0 1 8 0" fill="currentColor" />
+        </svg>
+      </a>
+      <ul class="gnav__links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#philosophie">Philosophie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="gnav__actions">
+        <button class="gnav__icon" aria-label="Rechercher">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <button class="gnav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mmenu" id="mobile-menu" hidden>
+      <ul>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Expériences</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#philosophie">Philosophie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ NAVIGATION LOCALE (sticky) ============ -->
+  <div class="lnav">
+    <div class="lnav__inner">
+      <a href="#" class="lnav__title">Horizon</a>
+      <div class="lnav__right">
+        <a href="#apercu" class="lnav__link is-current">Aperçu</a>
+        <a href="#destinations" class="lnav__link">Destinations</a>
+        <a href="#galerie" class="lnav__link">Galerie</a>
+        <a href="#contact" class="btn btn--sm">Réserver</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="apercu">
+      <div class="hero__media">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=80"
+             alt="Sommets émergeant d'une mer de nuages au lever du soleil" fetchpriority="high" />
+      </div>
+      <div class="hero__shade"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Horizon</p>
+        <h1 class="hero__title"><span>Voir plus loin.</span></h1>
+        <p class="hero__sub">Des sommets aux océans, le monde dans sa plus belle lumière.</p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn">Réserver</a>
+          <a href="#destinations" class="link-chevron">Découvrir les destinations</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ============ MANIFESTE (révélation mot à mot) ============ -->
+    <section class="statement">
+      <p class="statement__text" data-words>
+        Des sommets enneigés aux déserts infinis, chaque paysage raconte une histoire.
+        Nous les avons réunies en un seul voyage.
+        <span class="grad">Pensé pour ceux qui veulent tout voir.</span>
+      </p>
+    </section>
+
+    <!-- ============ IMAGE QUI S'OUVRE ============ -->
+    <section class="expand">
+      <div class="expand__frame">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2400&q=80"
+             alt="Lac turquoise entouré de montagnes" loading="lazy" />
+      </div>
+      <div class="expand__text">
+        <p class="eyebrow">Lacs d'altitude</p>
+        <h2>Une eau si claire<br />qu'on y lit le ciel.</h2>
+      </div>
+    </section>
+
+    <!-- ============ CHIFFRES ============ -->
+    <section class="stats">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Le monde, en grand.</h2>
+        <div class="stats__grid">
+          <div class="stat" data-reveal>
+            <p class="stat__value"><span data-count="120">120</span>+</p>
+            <p class="stat__label">destinations sélectionnées<br />avec soin.</p>
+          </div>
+          <div class="stat" data-reveal>
+            <p class="stat__value"><span data-count="6">6</span></p>
+            <p class="stat__label">continents explorés,<br />du Grand Nord aux tropiques.</p>
+          </div>
+          <div class="stat" data-reveal>
+            <p class="stat__value"><span data-count="98">98</span>%</p>
+            <p class="stat__label">de voyageurs<br />qui reviennent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS — défilement horizontal ============ -->
+    <section class="hscroll" id="destinations">
+      <div class="hscroll__head container">
+        <h2 class="section-title" data-reveal>Six mondes.<br /><span class="muted">Un seul horizon.</span></h2>
+      </div>
+      <div class="hscroll__pin">
+      <div class="hscroll__viewport">
+        <div class="hscroll__track">
+          <article class="hcard">
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1800&q=80" alt="Chaîne de montagnes enneigées" loading="lazy" /></div>
+            <div class="hcard__body"><span class="hcard__num">01</span><h3>Montagnes</h3><p>L'air pur des hauteurs et le silence des cimes.</p></div>
+          </article>
+          <article class="hcard">
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1800&q=80" alt="Vague turquoise vue du ciel sur une plage" loading="lazy" /></div>
+            <div class="hcard__body"><span class="hcard__num">02</span><h3>Océans</h3><p>Le rythme des marées, la lumière infinie du large.</p></div>
+          </article>
+          <article class="hcard">
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=80" alt="Désert de roches rouges sous un ciel bleu" loading="lazy" /></div>
+            <div class="hcard__body"><span class="hcard__num">03</span><h3>Déserts</h3><p>Des couleurs de feu et des nuits constellées.</p></div>
+          </article>
+          <article class="hcard">
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1800&q=80" alt="Forêt dense noyée dans la brume, vue du ciel" loading="lazy" /></div>
+            <div class="hcard__body"><span class="hcard__num">04</span><h3>Forêts</h3><p>Des canopées millénaires baignées de brume.</p></div>
+          </article>
+          <article class="hcard">
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=80" alt="Barque sur un lac alpin émeraude" loading="lazy" /></div>
+            <div class="hcard__body"><span class="hcard__num">05</span><h3>Lacs</h3><p>Des miroirs d'émeraude au pied des falaises.</p></div>
+          </article>
+          <article class="hcard">
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=1800&q=80" alt="Aurore boréale verte au-dessus d'une forêt" loading="lazy" /></div>
+            <div class="hcard__body"><span class="hcard__num">06</span><h3>Aurores</h3><p>Quand le ciel du Nord se met à danser.</p></div>
+          </article>
+        </div>
+      </div>
+      <div class="hscroll__progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ CHAPITRES — une journée ============ -->
+    <section class="chapters" id="experiences">
+      <div class="chapters__sticky">
+        <div class="chapters__media">
+          <img class="is-active" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2400&q=80" alt="Collines superposées dans la brume de l'aube" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2400&q=80" alt="Montagnes et lac en pleine journée" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80" alt="Plage tropicale au coucher du soleil" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2400&q=80" alt="Voie lactée au-dessus de montagnes enneigées" loading="lazy" />
+        </div>
+        <div class="chapters__shade"></div>
+        <ol class="chapters__dots" aria-hidden="true"><li class="is-active"></li><li></li><li></li><li></li></ol>
+      </div>
+      <div class="chapters__steps">
+        <div class="step">
+          <div class="step__card">
+            <p class="step__time">05:42</p>
+            <h3>L'aube.</h3>
+            <p>La brume se lève sur les vallées. Les premiers rayons dessinent chaque relief, un à un.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__card">
+            <p class="step__time">12:00</p>
+            <h3>Le zénith.</h3>
+            <p>Une lumière franche, des couleurs éclatantes. Le paysage se révèle dans ses moindres détails.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__card">
+            <p class="step__time">19:36</p>
+            <h3>L'heure dorée.</h3>
+            <p>Le ciel s'embrase. L'océan se pare d'or et de rose pour quelques minutes magiques.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__card">
+            <p class="step__time">23:15</p>
+            <h3>La nuit.</h3>
+            <p>Loin de toute lumière, la Voie lactée s'étire au-dessus des cimes. Le spectacle continue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENTO ============ -->
+    <section class="bento-section">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Tout ce qui compte.<br /><span class="muted">Rien de superflu.</span></h2>
+        <div class="bento">
+          <article class="tile tile--xl tile--img" data-reveal>
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80" alt="Route traversant un canyon rouge" loading="lazy" />
+            <div class="tile__body">
+              <p class="eyebrow">Itinéraires</p>
+              <h3>Des routes qui mènent<br />au bout du monde.</h3>
+            </div>
+          </article>
+          <article class="tile tile--text" data-reveal>
+            <p class="tile__big grad">4K</p>
+            <p>Chaque destination photographiée dans ses moindres détails.</p>
+          </article>
+          <article class="tile tile--img" data-reveal>
+            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&w=1200&q=80" alt="Arbre solitaire dans un lac au crépuscule" loading="lazy" />
+            <div class="tile__body"><h3>Contemplation.</h3></div>
+          </article>
+          <article class="tile tile--text tile--accent" data-reveal>
+            <svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true"><path d="M24 6c6 8 12 13 12 21a12 12 0 0 1-24 0c0-8 6-13 12-21Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+            <h3>Voyage responsable.</h3>
+            <p>Empreinte carbone compensée sur chaque séjour.</p>
+          </article>
+          <article class="tile tile--wide tile--img" data-reveal>
+            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1800&q=80" alt="Aurore boréale violette et verte au-dessus d'un paysage enneigé" loading="lazy" />
+            <div class="tile__body">
+              <p class="eyebrow">Expéditions polaires</p>
+              <h3>Sous les aurores.</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHILOSOPHIE — parallaxe ============ -->
+    <section class="split" id="philosophie">
+      <div class="container split__inner">
+        <div class="split__text">
+          <p class="eyebrow" data-reveal>Philosophie</p>
+          <h2 class="section-title" data-reveal>Prendre le temps<br />de regarder.</h2>
+          <p class="lead" data-reveal>
+            Nous croyons qu'un paysage se mérite. Qu'il faut parfois marcher des heures pour une seule vue,
+            attendre la bonne lumière, écouter le silence. C'est là que naissent les souvenirs qui restent.
+          </p>
+          <a href="#contact" class="link-chevron" data-reveal>Notre approche</a>
+        </div>
+        <div class="split__media">
+          <figure class="split__img split__img--a"><img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1400&q=80" alt="Vallée de Yosemite avec ses falaises de granit" loading="lazy" /></figure>
+          <figure class="split__img split__img--b"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80" alt="Lac calme bordé de pins" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIE — carrousel ============ -->
+    <section class="gallery" id="galerie">
+      <div class="container">
+        <h2 class="section-title" data-reveal>Galerie.</h2>
+      </div>
+      <div class="gallery__scroller" tabindex="0" aria-label="Galerie de paysages">
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=2000&q=80" alt="Vallée verdoyante au coucher du soleil" loading="lazy" /><figcaption><strong>Vallées.</strong> Le vert à perte de vue.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=2000&q=80" alt="Ponton en bois sur un lac" loading="lazy" /><figcaption><strong>Sérénité.</strong> Un ponton, un lac, et rien d'autre.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=2000&q=80" alt="Canyon couvert de mousse" loading="lazy" /><figcaption><strong>Canyons.</strong> La roche sculptée par le temps.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=2000&q=80" alt="Côte rocheuse au coucher du soleil" loading="lazy" /><figcaption><strong>Littoral.</strong> Là où la terre rencontre la mer.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=2000&q=80" alt="Cascade dans une forêt luxuriante" loading="lazy" /><figcaption><strong>Cascades.</strong> La fraîcheur des forêts profondes.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2000&q=80" alt="Forêt de conifères au soleil couchant" loading="lazy" /><figcaption><strong>Sous-bois.</strong> La lumière filtrée des grands pins.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=2000&q=80" alt="Forêt bordant un lac, vue aérienne" loading="lazy" /><figcaption><strong>Vu d'en haut.</strong> Une autre façon de voir.</figcaption></figure>
+      </div>
+      <div class="gallery__controls">
+        <div class="gallery__dots" role="tablist" aria-label="Choisir une image"></div>
+        <button class="gallery__play" aria-label="Mettre en pause" data-state="playing">
+          <svg class="i-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
+          <svg class="i-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta" id="contact">
+      <div class="cta__media">
+        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=2400&q=80" alt="Silhouette debout sur une étendue d'eau reflétant le coucher du soleil" loading="lazy" />
+      </div>
+      <div class="cta__shade"></div>
+      <div class="cta__content container">
+        <h2 class="cta__title" data-reveal>Votre prochain horizon<br /><span class="grad">commence ici.</span></h2>
+        <p class="lead" data-reveal>Parlez-nous de vos envies. Nous dessinons le voyage.</p>
+        <div class="hero__ctas" data-reveal>
+          <a href="mailto:contact@exemple.com" class="btn">Nous contacter</a>
+          <a href="#destinations" class="link-chevron">Voir les destinations</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__note">
+        Les visuels présentés sont des photographies d'illustration issues d'Unsplash.
+        Les tarifs, disponibilités et itinéraires sont donnés à titre indicatif et peuvent varier selon la saison.
+      </p>
+      <div class="footer__cols">
+        <div><h4>Explorer</h4><ul><li><a href="#destinations">Destinations</a></li><li><a href="#experiences">Expériences</a></li><li><a href="#galerie">Galerie</a></li></ul></div>
+        <div><h4>Horizon</h4><ul><li><a href="#philosophie">Philosophie</a></li><li><a href="#">Équipe</a></li><li><a href="#">Presse</a></li></ul></div>
+        <div><h4>Assistance</h4><ul><li><a href="#contact">Contact</a></li><li><a href="#">FAQ</a></li><li><a href="#">Conditions</a></li></ul></div>
+        <div><h4>Suivre</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Newsletter</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © <span data-year>2026</span> Horizon. Tous droits réservés.</p>
+        <ul><li><a href="#">Confidentialité</a></li><li><a href="#">Mentions légales</a></li><li><a href="#">Cookies</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
