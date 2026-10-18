@@ -198,12 +198,12 @@
       .to('.hero__shade', { opacity: 0.4, ease: 'none' }, 0);
 
     /* ---------- Manifeste : les mots s'allument un à un ---------- */
-    gsap.fromTo(words, { opacity: 0.16 }, {
-      opacity: 1,
-      stagger: 0.1,
-      ease: 'none',
-      scrollTrigger: { trigger: statement, start: 'top 78%', end: 'bottom 42%', scrub: true },
-    });
+    // Les mots passent du gris au blanc (le gris de départ garde un contraste suffisant)
+    const plain = words.filter((w) => w.classList.contains('w'));
+    const grad = words.filter((w) => !w.classList.contains('w'));
+    const tl = gsap.timeline({ scrollTrigger: { trigger: statement, start: 'top 78%', end: 'bottom 42%', scrub: true } });
+    tl.fromTo(plain, { color: '#6e6e73' }, { color: '#f5f5f7', stagger: 0.1, ease: 'none' }, 0);
+    if (grad.length) tl.fromTo(grad, { opacity: 0.5 }, { opacity: 1, ease: 'none', duration: 0.6 }, '>-0.3');
 
     /* ---------- Image qui s'ouvre en plein écran ---------- */
     gsap.timeline({

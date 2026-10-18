@@ -3,6 +3,14 @@
    Pour personnaliser : couleurs et typo dans :root ci-dessous.
    ========================================================= */
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-var.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #000;
   --surface: #161617;
@@ -50,6 +58,23 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 h1, h2, h3, h4, p, figure { margin: 0; }
 
 :focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 6px; }
+main:focus { outline: none; }
+
+/* Lien d'évitement (visible au clavier uniquement) */
+.skip {
+  position: fixed;
+  z-index: 200;
+  top: 8px;
+  left: 8px;
+  padding: 10px 16px;
+  border-radius: 980px;
+  background: var(--btn);
+  color: #fff;
+  font-size: 14px;
+  transform: translateY(-150%);
+  transition: transform 0.2s var(--ease);
+}
+.skip:focus { transform: none; }
 
 .container { width: min(var(--container), 100% - 2 * var(--gutter)); margin-inline: auto; }
 
@@ -523,7 +548,7 @@ h1, h2, h3, h4, p, figure { margin: 0; }
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  opacity: 0.25;
+  opacity: 0.6;
   transform: translateY(24px);
   transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
 }
@@ -532,7 +557,7 @@ h1, h2, h3, h4, p, figure { margin: 0; }
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.85);
   font-variant-numeric: tabular-nums;
 }
 .step h3 {
@@ -774,14 +799,15 @@ h1, h2, h3, h4, p, figure { margin: 0; }
 .footer a { color: #d2d2d7; }
 .footer a:hover { text-decoration: underline; }
 .footer__note { padding-bottom: 16px; border-bottom: 1px solid #424245; }
+.footer__note a { text-decoration: underline; }
 .footer__cols {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   padding: 24px 0;
   border-bottom: 1px solid #424245;
 }
-.footer h4 { color: #e8e8ed; font-size: 12px; font-weight: 600; margin-bottom: 10px; }
+.footer h2 { color: #e8e8ed; font-size: 12px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 10px; }
 .footer__cols li + li { margin-top: 8px; }
 .footer__bottom {
   display: flex;

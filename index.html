@@ -4,21 +4,51 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Horizon — Voir plus loin</title>
-  <meta name="description" content="Horizon — des paysages à couper le souffle, des sommets enneigés aux déserts infinis." />
+  <meta name="description" content="Horizon : des sommets enneigés aux déserts infinis, une sélection de paysages et de voyages pensés pour ceux qui veulent tout voir." />
   <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://julien-sys78.github.io/horizon/" />
+
+  <!-- Partage sur les réseaux -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Horizon" />
+  <meta property="og:title" content="Horizon — Voir plus loin" />
+  <meta property="og:description" content="Des sommets aux océans, le monde dans sa plus belle lumière." />
+  <meta property="og:url" content="https://julien-sys78.github.io/horizon/" />
+  <meta property="og:image" content="https://julien-sys78.github.io/horizon/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Sommets enneigés au-dessus d'une mer de nuages, avec le titre « Voir plus loin. »" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Horizon — Voir plus loin" />
+  <meta name="twitter:description" content="Des sommets aux océans, le monde dans sa plus belle lumière." />
+  <meta name="twitter:image" content="https://julien-sys78.github.io/horizon/og-image.jpg" />
+
+  <!-- Icônes -->
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="icon" href="icons/icon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
 
   <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"
+        imagesrcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+        imagesizes="100vw" fetchpriority="high" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Données structurées -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Horizon","url":"https://julien-sys78.github.io/horizon/","inLanguage":"fr","description":"Des sommets aux océans, le monde dans sa plus belle lumière."}
+  </script>
 </head>
 <body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
 
   <!-- ============ NAVIGATION GLOBALE ============ -->
   <header class="gnav">
     <nav class="gnav__inner" aria-label="Navigation principale">
-      <a href="#" class="gnav__logo" aria-label="Horizon — accueil">
+      <a href="./" class="gnav__logo" aria-label="Horizon — accueil">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
           <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6" />
           <path d="M5 14.5h14M7.5 17.5h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
@@ -33,9 +63,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="gnav__actions">
-        <button class="gnav__icon" aria-label="Rechercher">
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </button>
         <button class="gnav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span>
         </button>
@@ -55,7 +82,7 @@
   <!-- ============ NAVIGATION LOCALE (sticky) ============ -->
   <div class="lnav">
     <div class="lnav__inner">
-      <a href="#" class="lnav__title">Horizon</a>
+      <a href="./" class="lnav__title">Horizon</a>
       <div class="lnav__right">
         <a href="#apercu" class="lnav__link is-current">Aperçu</a>
         <a href="#destinations" class="lnav__link">Destinations</a>
@@ -65,12 +92,14 @@
     </div>
   </div>
 
-  <main>
+  <main id="contenu" tabindex="-1">
 
     <!-- ============ HERO ============ -->
     <section class="hero" id="apercu">
       <div class="hero__media">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2400&q=80"
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw"
              alt="Sommets émergeant d'une mer de nuages au lever du soleil" fetchpriority="high" />
       </div>
       <div class="hero__shade"></div>
@@ -98,8 +127,10 @@
     <!-- ============ IMAGE QUI S'OUVRE ============ -->
     <section class="expand">
       <div class="expand__frame">
-        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2400&q=80"
-             alt="Lac turquoise entouré de montagnes" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw"
+             alt="Lac turquoise entouré de montagnes" loading="lazy" decoding="async" />
       </div>
       <div class="expand__text">
         <p class="eyebrow">Lacs d'altitude</p>
@@ -137,27 +168,39 @@
       <div class="hscroll__viewport">
         <div class="hscroll__track">
           <article class="hcard">
-            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1800&q=80" alt="Chaîne de montagnes enneigées" loading="lazy" /></div>
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Chaîne de montagnes enneigées" loading="lazy" decoding="async" /></div>
             <div class="hcard__body"><span class="hcard__num">01</span><h3>Montagnes</h3><p>L'air pur des hauteurs et le silence des cimes.</p></div>
           </article>
           <article class="hcard">
-            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&w=1800&q=80" alt="Vague turquoise vue du ciel sur une plage" loading="lazy" /></div>
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Vague turquoise vue du ciel sur une plage" loading="lazy" decoding="async" /></div>
             <div class="hcard__body"><span class="hcard__num">02</span><h3>Océans</h3><p>Le rythme des marées, la lumière infinie du large.</p></div>
           </article>
           <article class="hcard">
-            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=80" alt="Désert de roches rouges sous un ciel bleu" loading="lazy" /></div>
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Désert de roches rouges sous un ciel bleu" loading="lazy" decoding="async" /></div>
             <div class="hcard__body"><span class="hcard__num">03</span><h3>Déserts</h3><p>Des couleurs de feu et des nuits constellées.</p></div>
           </article>
           <article class="hcard">
-            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=1800&q=80" alt="Forêt dense noyée dans la brume, vue du ciel" loading="lazy" /></div>
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Forêt dense noyée dans la brume, vue du ciel" loading="lazy" decoding="async" /></div>
             <div class="hcard__body"><span class="hcard__num">04</span><h3>Forêts</h3><p>Des canopées millénaires baignées de brume.</p></div>
           </article>
           <article class="hcard">
-            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=80" alt="Barque sur un lac alpin émeraude" loading="lazy" /></div>
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Barque sur un lac alpin émeraude" loading="lazy" decoding="async" /></div>
             <div class="hcard__body"><span class="hcard__num">05</span><h3>Lacs</h3><p>Des miroirs d'émeraude au pied des falaises.</p></div>
           </article>
           <article class="hcard">
-            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&fit=crop&w=1800&q=80" alt="Aurore boréale verte au-dessus d'une forêt" loading="lazy" /></div>
+            <div class="hcard__media"><img src="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1483347756197-71ef80e95f73?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Aurore boréale verte au-dessus d'une forêt" loading="lazy" decoding="async" /></div>
             <div class="hcard__body"><span class="hcard__num">06</span><h3>Aurores</h3><p>Quand le ciel du Nord se met à danser.</p></div>
           </article>
         </div>
@@ -170,10 +213,18 @@
     <section class="chapters" id="experiences">
       <div class="chapters__sticky">
         <div class="chapters__media">
-          <img class="is-active" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2400&q=80" alt="Collines superposées dans la brume de l'aube" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2400&q=80" alt="Montagnes et lac en pleine journée" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80" alt="Plage tropicale au coucher du soleil" loading="lazy" />
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2400&q=80" alt="Voie lactée au-dessus de montagnes enneigées" loading="lazy" />
+          <img class="is-active" src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw" alt="Collines superposées dans la brume de l'aube" loading="lazy" decoding="async" />
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw" alt="Montagnes et lac en pleine journée" loading="lazy" decoding="async" />
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw" alt="Plage tropicale au coucher du soleil" loading="lazy" decoding="async" />
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw" alt="Voie lactée au-dessus de montagnes enneigées" loading="lazy" decoding="async" />
         </div>
         <div class="chapters__shade"></div>
         <ol class="chapters__dots" aria-hidden="true"><li class="is-active"></li><li></li><li></li><li></li></ol>
@@ -216,7 +267,9 @@
         <h2 class="section-title" data-reveal>Tout ce qui compte.<br /><span class="muted">Rien de superflu.</span></h2>
         <div class="bento">
           <article class="tile tile--xl tile--img" data-reveal>
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80" alt="Route traversant un canyon rouge" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Route traversant un canyon rouge" loading="lazy" decoding="async" />
             <div class="tile__body">
               <p class="eyebrow">Itinéraires</p>
               <h3>Des routes qui mènent<br />au bout du monde.</h3>
@@ -227,7 +280,9 @@
             <p>Chaque destination photographiée dans ses moindres détails.</p>
           </article>
           <article class="tile tile--img" data-reveal>
-            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&w=1200&q=80" alt="Arbre solitaire dans un lac au crépuscule" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w"
+             sizes="(max-width: 767px) 90vw, 33vw" alt="Arbre solitaire dans un lac au crépuscule" loading="lazy" decoding="async" />
             <div class="tile__body"><h3>Contemplation.</h3></div>
           </article>
           <article class="tile tile--text tile--accent" data-reveal>
@@ -236,7 +291,9 @@
             <p>Empreinte carbone compensée sur chaque séjour.</p>
           </article>
           <article class="tile tile--wide tile--img" data-reveal>
-            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1800&q=80" alt="Aurore boréale violette et verte au-dessus d'un paysage enneigé" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 90vw, 75vw" alt="Aurore boréale violette et verte au-dessus d'un paysage enneigé" loading="lazy" decoding="async" />
             <div class="tile__body">
               <p class="eyebrow">Expéditions polaires</p>
               <h3>Sous les aurores.</h3>
@@ -259,8 +316,12 @@
           <a href="#contact" class="link-chevron" data-reveal>Notre approche</a>
         </div>
         <div class="split__media">
-          <figure class="split__img split__img--a"><img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=1400&q=80" alt="Vallée de Yosemite avec ses falaises de granit" loading="lazy" /></figure>
-          <figure class="split__img split__img--b"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80" alt="Lac calme bordé de pins" loading="lazy" /></figure>
+          <figure class="split__img split__img--a"><img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w"
+             sizes="(max-width: 767px) 90vw, 45vw" alt="Vallée de Yosemite avec ses falaises de granit" loading="lazy" decoding="async" /></figure>
+          <figure class="split__img split__img--b"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w"
+             sizes="(max-width: 767px) 50vw, 25vw" alt="Lac calme bordé de pins" loading="lazy" decoding="async" /></figure>
         </div>
       </div>
     </section>
@@ -271,13 +332,27 @@
         <h2 class="section-title" data-reveal>Galerie.</h2>
       </div>
       <div class="gallery__scroller" tabindex="0" aria-label="Galerie de paysages">
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=2000&q=80" alt="Vallée verdoyante au coucher du soleil" loading="lazy" /><figcaption><strong>Vallées.</strong> Le vert à perte de vue.</figcaption></figure>
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&fit=crop&w=2000&q=80" alt="Ponton en bois sur un lac" loading="lazy" /><figcaption><strong>Sérénité.</strong> Un ponton, un lac, et rien d'autre.</figcaption></figure>
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&fit=crop&w=2000&q=80" alt="Canyon couvert de mousse" loading="lazy" /><figcaption><strong>Canyons.</strong> La roche sculptée par le temps.</figcaption></figure>
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&fit=crop&w=2000&q=80" alt="Côte rocheuse au coucher du soleil" loading="lazy" /><figcaption><strong>Littoral.</strong> Là où la terre rencontre la mer.</figcaption></figure>
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=2000&q=80" alt="Cascade dans une forêt luxuriante" loading="lazy" /><figcaption><strong>Cascades.</strong> La fraîcheur des forêts profondes.</figcaption></figure>
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=2000&q=80" alt="Forêt de conifères au soleil couchant" loading="lazy" /><figcaption><strong>Sous-bois.</strong> La lumière filtrée des grands pins.</figcaption></figure>
-        <figure class="gitem"><img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=2000&q=80" alt="Forêt bordant un lac, vue aérienne" loading="lazy" /><figcaption><strong>Vu d'en haut.</strong> Une autre façon de voir.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Vallée verdoyante au coucher du soleil" loading="lazy" decoding="async" /><figcaption><strong>Vallées.</strong> Le vert à perte de vue.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1439066615861-d1af74d74000?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Ponton en bois sur un lac" loading="lazy" decoding="async" /><figcaption><strong>Sérénité.</strong> Un ponton, un lac, et rien d'autre.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1504893524553-b855bce32c67?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Canyon couvert de mousse" loading="lazy" decoding="async" /><figcaption><strong>Canyons.</strong> La roche sculptée par le temps.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Côte rocheuse au coucher du soleil" loading="lazy" decoding="async" /><figcaption><strong>Littoral.</strong> Là où la terre rencontre la mer.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Cascade dans une forêt luxuriante" loading="lazy" decoding="async" /><figcaption><strong>Cascades.</strong> La fraîcheur des forêts profondes.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Forêt de conifères au soleil couchant" loading="lazy" decoding="async" /><figcaption><strong>Sous-bois.</strong> La lumière filtrée des grands pins.</figcaption></figure>
+        <figure class="gitem"><img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w"
+             sizes="(max-width: 767px) 86vw, min(84vw, 1100px)" alt="Forêt bordant un lac, vue aérienne" loading="lazy" decoding="async" /><figcaption><strong>Vu d'en haut.</strong> Une autre façon de voir.</figcaption></figure>
       </div>
       <div class="gallery__controls">
         <div class="gallery__dots" role="tablist" aria-label="Choisir une image"></div>
@@ -291,7 +366,9 @@
     <!-- ============ CTA FINAL ============ -->
     <section class="cta" id="contact">
       <div class="cta__media">
-        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=2400&q=80" alt="Silhouette debout sur une étendue d'eau reflétant le coucher du soleil" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+             srcset="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=480&amp;q=80 480w, https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=800&amp;q=80 800w, https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=1200&amp;q=80 1200w, https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w, https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&amp;fit=crop&amp;w=2400&amp;q=80 2400w"
+             sizes="100vw" alt="Silhouette debout sur une étendue d'eau reflétant le coucher du soleil" loading="lazy" decoding="async" />
       </div>
       <div class="cta__shade"></div>
       <div class="cta__content container">
@@ -310,24 +387,23 @@
   <footer class="footer">
     <div class="container">
       <p class="footer__note">
-        Les visuels présentés sont des photographies d'illustration issues d'Unsplash.
         Les tarifs, disponibilités et itinéraires sont donnés à titre indicatif et peuvent varier selon la saison.
+        Photographies : <a href="credits.html">Unsplash et leurs auteurs</a>.
       </p>
       <div class="footer__cols">
-        <div><h4>Explorer</h4><ul><li><a href="#destinations">Destinations</a></li><li><a href="#experiences">Expériences</a></li><li><a href="#galerie">Galerie</a></li></ul></div>
-        <div><h4>Horizon</h4><ul><li><a href="#philosophie">Philosophie</a></li><li><a href="#">Équipe</a></li><li><a href="#">Presse</a></li></ul></div>
-        <div><h4>Assistance</h4><ul><li><a href="#contact">Contact</a></li><li><a href="#">FAQ</a></li><li><a href="#">Conditions</a></li></ul></div>
-        <div><h4>Suivre</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">Newsletter</a></li></ul></div>
+        <div><h2>Explorer</h2><ul><li><a href="#destinations">Destinations</a></li><li><a href="#experiences">Expériences</a></li><li><a href="#galerie">Galerie</a></li></ul></div>
+        <div><h2>Horizon</h2><ul><li><a href="#philosophie">Philosophie</a></li><li><a href="#contact">Nous contacter</a></li></ul></div>
+        <div><h2>Informations</h2><ul><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html">Confidentialité</a></li><li><a href="credits.html">Crédits</a></li></ul></div>
       </div>
       <div class="footer__bottom">
         <p>Copyright © <span data-year>2026</span> Horizon. Tous droits réservés.</p>
-        <ul><li><a href="#">Confidentialité</a></li><li><a href="#">Mentions légales</a></li><li><a href="#">Cookies</a></li></ul>
+        <ul><li><a href="confidentialite.html">Confidentialité</a></li><li><a href="mentions-legales.html">Mentions légales</a></li><li><a href="confidentialite.html#cookies">Cookies</a></li></ul>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
